@@ -1,0 +1,35 @@
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Gradle
+.gradle/
+build/
+app/build/
+local.properties
+
+# Generated files
+captures/
+output.json
+release/
+
+# Misc
+.DS_Store
+Thumbs.db
+*.class
+*.jar
+*.apk
+*.dex
+*.so
+
+# Keystore files
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# Crashlytics / Firebase
+crashlytics.properties
+crashlytics-build.properties

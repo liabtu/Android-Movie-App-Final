@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Light რეჟიმის ფერები -->
+    <color name="colorSurface">#FFFFFF</color>           <!-- ფონი -->
+    <color name="colorOnSurface">#000000</color>         <!-- ტექსტი -->
+    <color name="colorPrimary">#6C47FF</color>
+    <color name="colorOnPrimary">#FFFFFF</color>         <!-- თეთრი ტექსტები მეწამულ ღილაკებზე -->
+</resources>

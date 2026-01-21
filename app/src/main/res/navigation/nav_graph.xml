@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!--
+        HOME FRAGMENT
+        - აპლიკაციის მთავარი ეკრანი
+        - აჩვენებს Featured ფილმს, ახალ და პოპულარულ ფილმებს
+        - აქედან გადადის Details-ზე ფილმზე დაკლიკებით
+    -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.movieapplication.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <!-- გადასვლა ფილმის დეტალურ გვერდზე -->
+        <action
+            android:id="@+id/action_homeFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+
+    <!--
+        SEARCH FRAGMENT
+        - ფილმების ძებნის ეკრანი
+        - იყენებს SearchView-ს და აჩვენებს შედეგებს RecyclerView-ში
+        - ასევე გადადის Details-ზე
+    -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.movieapplication.ui.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search">
+
+        <!-- გადასვლა ფილმის დეტალურ გვერდზე ძებნის შედეგებიდან -->
+        <action
+            android:id="@+id/action_searchFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+
+    <!--
+        WATCHLIST FRAGMENT
+        - მომხმარებლის საყვარელი ფილმების სია (Room-დან)
+        - ფილმის წაშლა/დამატება აქედანაც შესაძლებელია
+        - გადადის Details-ზე
+    -->
+    <fragment
+        android:id="@+id/watchlistFragment"
+        android:name="com.example.movieapplication.ui.watchlist.WatchlistFragment"
+        android:label="Watchlist"
+        tools:layout="@layout/fragment_watchlist">
+
+        <!-- გადასვლა ფილმის დეტალურ გვერდზე Watchlist-დან -->
+        <action
+            android:id="@+id/action_watchlistFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+
+    <!--
+        MOVIE DETAILS FRAGMENT
+        - ფილმის სრული ინფორმაცია (სათაური, აღწერა, რეიტინგი, ჟანრები, ფონი და ა.შ.)
+        - იღებს Movie ობიექტს არგუმენტად (Safe Args-ით)
+        - აქ არის ფავორიტის ღილაკი (დამატება/წაშლა)
+    -->
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.example.movieapplication.ui.details.DetailsFragment"
+        android:label="Movie Details"
+        tools:layout="@layout/fragment_details">
+
+        <argument
+            android:name="movie"
+            app:argType="com.example.movieapplication.data.model.Movie" />
+    </fragment>
+
+</navigation>
