@@ -32,14 +32,9 @@
 4. **Details** — ფილმის სრული ინფო + ფავორიტის ღილაკი
 
 ## სკრინშოტები
-Home (Dark Mode)
-![IMG_0719](https://github.com/user-attachments/assets/ffb8665f-7180-4e49-8b0a-d1e21c332373)
-Details Screen (Dark Theme)
-![IMG_0721](https://github.com/user-attachments/assets/894233b7-5d04-4630-9bf8-c46b5fb74a4a)
-Watchlist – საყვარელი ფილმები
-![IMG_0720](https://github.com/user-attachments/assets/20f5864c-e03b-4dce-9c55-cb345cc7c350)
-Search Results (Dark)
-![IMG_0718](https://github.com/user-attachments/assets/35f4621e-438d-4318-af2a-19b6d61971db)
+| Home (Dark) | Details Screen | Watchlist | Search Results |
+| :---: | :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/ffb8665f-7180-4e49-8b0a-d1e21c332373" width="200"> | <img src="https://github.com/user-attachments/assets/894233b7-5d04-4630-9bf8-c46b5fb74a4a" width="200"> | <img src="https://github.com/user-attachments/assets/20f5864c-e03b-4dce-9c55-cb345cc7c350" width="200"> | <img src="https://github.com/user-attachments/assets/35f4621e-438d-4318-af2a-19b6d61971db" width="200"> |
 
 1. Clone the repository:
 git clone [https://github.com/liabtu/Android-Movie-App-Final.git](https://github.com/liabtu/Android-Movie-App-Final.git)
